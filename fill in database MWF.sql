@@ -1,86 +1,32 @@
-INSERT INTO `users` 
-VALUES (1, 'Jurgen','Paapen', '', 'jurgen.paapen@student.avans.nl', 'jurgen.paapen', '0626682388', 'man',  '1982-09-08', '$2y$10$nYnkQxec2qqPklKb9Jb.W.c8HpIlZ1uW4DavyqYjj2mrnoo7Xrc4K', 'man');
+INSERT INTO `users` (customerID, firstname, lastname, preposition, email, username, phonenumber, gender, birthdate, password, preferredgender)
+VALUES  (1, 'Jurgen','Paapen', '', 'jurgen.paapen@student.avans.nl', 'jurgen.paapen', '0626682388', 'man',  '1982-09-08', '$2y$10$nYnkQxec2qqPklKb9Jb.W.c8HpIlZ1uW4DavyqYjj2mrnoo7Xrc4K', 'man'),
+        (2, 'Stijn', 'Pijman', '', 'stijn.pijman@student.avans.nl', 'stijn.pijman', '0626682499', 'man',  '1992-11-18', '$2y$10$U9RV8lS4mOngnFK1QXGume7RW6pSjVRMK/Ay4Fm10kYxQAl868PYW','vrouw'),
+        (3, 'Joost', 'Oomen', '', 'joost.oomen@student.avans.nl', 'joost.oomen', '0613382569', 'man',  '1970-03-01', '$2y$10$QwaNvl4snwOE3gJbx9T3V.QtVoF5cLt0fhksZ00rXILtx.A94EtRm', 'beide'),
+        (4, 'Nick', 'Sluiter', '', 'nick.sluiter@student.avans.nl', 'nick.sluiter', '0612345678', 'man',  '1987-12-31', '$2y$10$7o2F9FCevL.IKUEnPUAfnOS6a1QJmpYXui6f6QSkQnqzmyTbKQXxa','man'),
+        (5, 'Anna', 'Schultzer', '', 'anna.schultzer@gmail.com', 'anna.Schultzer', '0634512466', 'vrouw',  '1996-11-11', '$2y$10$ZBSDy/w/eRgAfWCuaDhXVuAxlqczbVn504iAgcXUVHdpcGZqmsul.', 'vrouw'),
+        (6, 'Frank', 'Rassen', '', 'frank.rassen@hotmail.com', 'frank.rassen', '0625797532', 'man',  '1987-02-10', '$2y$10$mv0hiTABRcjTTAemAZ27r.1f4doBC31PrHt3gpfNKMJOQ1H2xUK8C','man'),
+        (7, 'Monique', 'Beer', 'de', 'monique.debeer@outlook.com', 'monique.debeer', '0694276935', 'vrouw',  '1984-07-18', '$2y$10$HbCncyh3JQSjT/vfShncA.grfsTCl8ZroCc.9GyhpY8Hpg5QcoFEC','vrouw'),
+        (8, 'Trudie', 'Vries', 'de', 'trudie.devries@home.com', 'trudie.devries', '0612349836', 'vrouw',  '1959-04-28', '$2y$10$jkpwwJylIzxrl3YDQKJzFeHBgvbs8H0y9gWAFnUj0qoV5VXea/kJy','vrouw');
 
-INSERT INTO `users`
-VALUES (2, 'Stijn', 'Pijman', '', 'stijn.pijman@student.avans.nl', 'stijn.pijman', '0626682499', 'man',  '1992-11-18', '$2y$10$U9RV8lS4mOngnFK1QXGume7RW6pSjVRMK/Ay4Fm10kYxQAl868PYW','vrouw');
+INSERT INTO `interest` (customerID, boksen, fitness, hardlopen, tennis, squash, wandelen, wielrennen, zwemmen)
+VALUES  (1, 1, 0, 0, 0, 0, 0, 0, 0),
+        (2, 1, 0, 0, 0, 0, 0, 0, 0),
+        (3, 0, 0, 1, 0, 0, 0, 1, 0),
+        (4, 0, 0, 0, 0, 1, 0, 0, 0),
+        (5, 0, 0, 1, 0, 0, 0, 0, 0),
+        (6, 1, 0, 0, 0, 0, 0, 0, 0),
+        (7, 0, 1, 0, 0, 0, 0, 0, 1),
+        (8, 0, 0, 0, 0, 0, 1, 0, 0);
 
-INSERT INTO `users`
-VALUES (3, 'Joost', 'Oomen', '', 'joost.oomen@student.avans.nl', 'joost.oomen', '0613382569', 'man',  '1970-03-01', '$2y$10$QwaNvl4snwOE3gJbx9T3V.QtVoF5cLt0fhksZ00rXILtx.A94EtRm', 'beide');
-
-INSERT INTO `users`
-VALUES (4, 'Nick', 'Sluiter', '', 'nick.sluiter@student.avans.nl', 'nick.sluiter', '0612345678', 'man',  '1987-12-31', '$2y$10$7o2F9FCevL.IKUEnPUAfnOS6a1QJmpYXui6f6QSkQnqzmyTbKQXxa','man');
-
-INSERT INTO `users`
-VALUES (5, 'Anna', 'Schultzer', '', 'anna.schultzer@gmail.com', 'anna.Schultzer', '0634512466', 'vrouw',  '1996-11-11', '$2y$10$ZBSDy/w/eRgAfWCuaDhXVuAxlqczbVn504iAgcXUVHdpcGZqmsul.', 'vrouw');
-
-INSERT INTO `users`
-VALUES (6, 'Frank', 'Rassen', '', 'frank.rassen@hotmail.com', 'frank.rassen', '0625797532', 'man',  '1987-02-10', '$2y$10$mv0hiTABRcjTTAemAZ27r.1f4doBC31PrHt3gpfNKMJOQ1H2xUK8C','man');
-
-INSERT INTO `users`
-VALUES (7, 'Monique', 'Beer', 'de', 'monique.debeer@outlook.com', 'monique.debeer', '0694276935', 'vrouw',  '1984-07-18', '$2y$10$HbCncyh3JQSjT/vfShncA.grfsTCl8ZroCc.9GyhpY8Hpg5QcoFEC','vrouw');
-
-INSERT INTO `users`
-VALUES (8, 'Trudie', 'Vries', 'de', 'trudie.devries@home.com', 'trudie.devries', '0612349836', 'vrouw',  '1959-04-28', '$2y$10$jkpwwJylIzxrl3YDQKJzFeHBgvbs8H0y9gWAFnUj0qoV5VXea/kJy','vrouw');
-
-
-
-
-
-INSERT INTO `interest`
-VALUES (1, 1, 0, 0, 0, 0, 0, 0, 0);
-        
-INSERT INTO `interest`
-VALUES (2, 1, 0, 0, 0, 0, 0, 0, 0);
-        
-INSERT INTO `interest`
-VALUES (3, 0, 0, 1, 0, 0, 0, 1, 0);
-        
-INSERT INTO `interest`
-VALUES (4, 0, 0, 0, 0, 1, 0, 0, 0);
-
-INSERT INTO `interest`
-VALUES (5, 0, 0, 1, 0, 0, 0, 0, 0);
-        
-INSERT INTO `interest`
-VALUES (6, 1, 0, 0, 0, 0, 0, 0, 0);
-        
-INSERT INTO `interest`
-VALUES (7, 0, 1, 0, 0, 0, 0, 0, 1);
-        
-INSERT INTO `interest`
-VALUES (8, 0, 0, 0, 0, 0, 1, 0, 0);
-
-
-
-
-
-INSERT INTO `timeslot`                         
-VALUES (1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0);
-        
-INSERT INTO `timeslot`
-VALUES (2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-        
-INSERT INTO `timeslot`
-VALUES (3, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-        
-INSERT INTO `timeslot`
-VALUES (4, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1);
-
-INSERT INTO `timeslot`
-VALUES (5, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-        
-INSERT INTO `timeslot`
-VALUES (6, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1);
-        
-INSERT INTO `timeslot`
-VALUES (7, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-        
-INSERT INTO `timeslot`
-VALUES (8, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0);
-
-
-
-
+INSERT INTO `timeslot` (customerID, timeslot1, timeslot2, timeslot3, timeslot4, timeslot5, timeslot6, timeslot7, timeslot8, timeslot9, timeslot10, timeslot11, timeslot12, timeslot13, timeslot14, timeslot15, timeslot16, timeslot17, timeslot18, timeslot19, timeslot20, tiemslot21)                      
+VALUES  (1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0);
+        (2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+        (3, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+        (4, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1);
+        (5, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+        (6, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1);
+        (7, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+        (8, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0);
 
 DROP VIEW IF EXISTS `koppel`;
 CREATE VIEW koppel AS
