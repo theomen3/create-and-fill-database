@@ -1,4 +1,4 @@
-INSERT INTO `users` (customerID, firstname, lastname, preposistion, email, username, phonenumber, gender, birthdate, password, preferredgender)
+INSERT INTO `users` (customerID, firstname, lastname, preposition, email, username, phonenumber, gender, birthdate, password, preferredgender)
 VALUES (1, 'Jurgen','Paapen', '', 'jurgen.paapen@student.avans.nl', 'jurgen.paapen', '0626682388', 'man',  '1982-09-08', '$2y$10$nYnkQxec2qqPklKb9Jb.W.c8HpIlZ1uW4DavyqYjj2mrnoo7Xrc4K', 'man'),
  (2, 'Stijn', 'Pijman', '', 'stijn.pijman@student.avans.nl', 'stijn.pijman', '0626682499', 'man',  '1992-11-18', '$2y$10$U9RV8lS4mOngnFK1QXGume7RW6pSjVRMK/Ay4Fm10kYxQAl868PYW','vrouw'),
 (3, 'Joost', 'Oomen', '', 'joost.oomen@student.avans.nl', 'joost.oomen', '0613382569', 'man',  '1970-03-01', '$2y$10$QwaNvl4snwOE3gJbx9T3V.QtVoF5cLt0fhksZ00rXILtx.A94EtRm', 'beide'),
