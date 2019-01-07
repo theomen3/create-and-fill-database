@@ -5,7 +5,7 @@ CREATE TABLE `users` (
   customerID      INT(10) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   firstname       VARCHAR(255) NOT NULL,
   lastname        VARCHAR(255) NOT NULL,
-  preposistion	  VARCHAR(20),
+  preposition	  VARCHAR(20),
   email           VARCHAR(255) NOT NULL,
   username        VARCHAR(255) NOT NULL,
   phonenumber     VARCHAR(20) NOT NULL,
